@@ -1,0 +1,30 @@
+# Theme ignore from https://github.com/roots/sage/blob/master/.gitignore
+
+
+
+# Ignore project files
+
+# Bedrock ignore from https://github.com/roots/bedrock/blob/master/.gitignore
+
+# Application
+/site/web/app/plugins/*
+/site/!web/app/plugins/.gitkeep
+/site/web/app/mu-plugins/*/
+/site/web/app/upgrade
+/site/web/app/uploads/*
+/site/!web/app/uploads/.gitkeep
+
+# WordPress
+/site/web/wp
+/site/web/.htaccess
+
+# Dotenv
+/site/.env
+/site/.env.*
+/site/!.env.example
+
+# Composer
+/site/vendor
+
+# tmp directory
+/site/web/app/themes/gutsage/tmp/*
