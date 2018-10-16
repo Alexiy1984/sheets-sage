@@ -1,0 +1,5 @@
+.color {
+  &-primary {
+    color: map-get($theme-colors, "primary");
+  }
+}

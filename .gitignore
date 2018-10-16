@@ -1,6 +1,12 @@
 # Theme ignore from https://github.com/roots/sage/blob/master/.gitignore
 
-
+/site/web/app/themes/custom_sage/.cache-loader 
+/site/web/app/themes/custom_sage/dist
+/site/web/app/themes/custom_sage/node_modules
+/site/web/app/themes/custom_sage/npm-debug.log
+/site/web/app/themes/custom_sage/yarn-error.log
+/site/web/app/themes/custom_sage/vendor
+/site/web/app/themes/custom_sage/resources/assets/config-local.json
 
 # Ignore project files
 
@@ -27,4 +33,4 @@
 /site/vendor
 
 # tmp directory
-/site/web/app/themes/gutsage/tmp/*
+/site/web/app/themes/custom_sage/tmp/*
