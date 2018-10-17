@@ -1,0 +1,9 @@
+.header-nav {
+  li a {
+    color: #fff;
+
+    &:hover {
+      color: lighten($primary, 25%);
+    }
+  }
+}
