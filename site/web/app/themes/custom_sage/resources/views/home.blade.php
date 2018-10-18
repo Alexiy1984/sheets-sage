@@ -3,26 +3,15 @@
 @section('content')
   @include('partials.main-page-header')
 
-  @php
-    $args=array(
-      'post_type' => 'post',
-      'post_status' => 'publish',
-      'posts_per_page' => -1,
-    );
-    $query = new WP_Query($args);
-  @endphp
+  <div class="row">
+    <div class="col-4">
+      @include('partials.content.posts-list')
+    </div>
 
-  @if ($query->have_posts())
-    <ol>
-    @while ($query->have_posts()) @php $query->the_post() @endphp
-      <li>
-        <a href="{{ get_permalink() }}">
-          {!! get_the_title() !!} : ({!! get_the_excerpt()!!})
-        </a>
-      </li>    
-    @endwhile
-  </ol>
-  @endif
-  @php wp_reset_postdata() @endphp
+    <div class="col-8">
+      @include('partials.content.categories-list')
+    </div>
+  </div>  
 
 @endsection
+

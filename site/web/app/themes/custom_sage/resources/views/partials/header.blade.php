@@ -10,5 +10,3 @@
     </nav>
   </div>
 </header>
-
-<!-- {{ get_bloginfo('name', 'display') }} -->
