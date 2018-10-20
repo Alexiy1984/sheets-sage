@@ -1,0 +1,31 @@
+.post-card {
+  padding: 1rem;
+  border-radius: 9px;
+  margin-bottom: 1rem;
+  color: darken($primary, 25%);
+  width: 100%;
+  display: inline-block;
+  height: 15rem;
+
+  &__header {
+    font-size: 1.5rem;
+
+    a {
+      color: #fff;
+    }
+  }
+}
+
+@include media-breakpoint-up(sm) {
+  .post-card {
+    width: 45%;
+    margin-right: 2.5%;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .post-card {
+    width: 30%;
+    margin-right: 2%;
+  }
+}

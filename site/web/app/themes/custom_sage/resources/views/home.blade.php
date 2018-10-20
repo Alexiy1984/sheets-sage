@@ -4,12 +4,13 @@
   @include('partials.main-page-header')
 
   <div class="row">
-    <div class="col-4">
+    <div class="col-12 col-lg-4 mb-3 d-flex flex-column">
       @include('partials.content.posts-list')
+      @include('partials.content.mv-posts-list')
     </div>
 
-    <div class="col-8">
-      @include('partials.content.categories-list')
+    <div class="col-12 col-lg-8">
+      @include('partials.content.category-card')
     </div>
   </div>  
 

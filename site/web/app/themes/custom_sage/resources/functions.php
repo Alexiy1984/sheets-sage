@@ -90,3 +90,24 @@ Container::getInstance()
             'view' => require dirname(__DIR__).'/config/view.php',
         ]);
     }, true);
+
+// Set numbered post views count    
+
+function setPostViews($postID) {
+  $countKey = 'post_views_count';
+  $count = get_post_meta($postID, $countKey, true);
+  if($count==''){
+      $count = 0;
+      delete_post_meta($postID, $countKey);
+      add_post_meta($postID, $countKey, '0');
+  }else{
+      $count++;
+      update_post_meta($postID, $countKey, $count);
+  }
+}
+
+function custom_excerpt_length( $length ) {
+	return 35;
+}
+
+add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );

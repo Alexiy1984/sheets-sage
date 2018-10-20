@@ -12,7 +12,7 @@
 @if ($query->have_posts())
   <input class="scrolled-list__search" type="text" id="ListInput" placeholder="Search for names..">
   <div class="scrolled-list__wrapper">
-  <ul class="scrolled-list" id="scrolled-list">
+  <ul class="scrolled-list highlighted-list" id="scrolled-list">
   @while ($query->have_posts()) @php $query->the_post() @endphp
     <li>
       <a href="{{ get_permalink() }}">
@@ -21,6 +21,6 @@
     </li>    
   @endwhile
   </ul>
-  </div>
+</div>
 @endif
 @php wp_reset_postdata() @endphp

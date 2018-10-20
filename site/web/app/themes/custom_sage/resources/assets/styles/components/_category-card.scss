@@ -5,11 +5,29 @@
   color: #fff;
   margin-bottom: 1rem;
   border-radius: 9px;
-  height: 15rem;
 
   h3 {
     padding-bottom: 0.5rem;
     border-bottom: 1px solid #fff;
+  }
+
+  &__body {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    min-height: 10rem;
+  }
+
+  &__description {
+    padding-right: 1rem;
+
+    &_noimage {
+      padding-right: 0;
+    }
+  }
+
+  &__fimg {
+    width: 10rem;
   }
 
   &:hover {

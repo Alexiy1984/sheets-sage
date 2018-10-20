@@ -1,0 +1,20 @@
+.highlighted-list {
+  li {
+    padding: 0.25rem 0;
+
+    a {
+      display: block;
+      width: 100%;
+    }
+
+    &:hover {
+      background-image: linear-gradient(to right, rgba(255, 255, 255, 0.5), lighten($primary, 15%) 15%, rgba(255, 255, 255, 0.5));
+      padding-left: 5%;
+
+      a {
+        color: darken($primary, 10%);
+        text-decoration: none;
+      }
+    }
+  }
+}
